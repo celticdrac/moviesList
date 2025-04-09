@@ -1,0 +1,45 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 11px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  place-items: center;
+  border-right: solid 20px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  /* background-color: black; */
+  color: white;
+  margin: 0;
+}
+
+button {
+  all: unset;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+  scroll-margin-left: 50px;
+  transition: transform 0.3s ease;
+}
+
+button:focus,
+button:focus-visible {
+  transform: scale(1.15);
+  margin: 10px;
+}
+
+button:focus img,
+button:focus-visible img {
+  outline: 2px solid white;
+  border-radius: 15px;
+}
